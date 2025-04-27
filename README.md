@@ -13,6 +13,12 @@ This project is part of a university course assignment and is currently in its e
 - Designed for cryptocurrency and stock market analysis
 - Easy to add new strategies and indicators
 
+## Roadmap
+- Add more technical indicators
+- Implement backtesting system
+- Support for live trading (future)
+- Build a simple UI for interaction
+
 ## Getting Started
 > Note: This project is under active development and is not ready for production use.
 
@@ -28,3 +34,11 @@ Run the project:
 ```
 python app.py
 ```
+
+## License
+This project is licensed under the MIT License.
+You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.
+However, the software is provided "as is", without warranty of any kind.
+Please see the LICENSE file for more details.
+
+
