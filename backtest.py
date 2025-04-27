@@ -20,7 +20,7 @@ def back_test(df, dynamic_stoploss, take_profit):
                 position = 1
 
         elif position == 1:
-            # آپدیت داینامیک استاپ اگر قیمت بالاتر رفت
+            # stoploss update if range big than a go
             new_stop = price * (1 - dynamic_stoploss / 100)
             if new_stop > dynamic_stop_price:
                 dynamic_stop_price = new_stop
@@ -39,7 +39,6 @@ def back_test(df, dynamic_stoploss, take_profit):
                 position = 0
 
             elif df.at[i, 'signal'] == -1:
-                # سیگنال فروش هم باعث فروش میشه
                 capital = btc * price
                 btc = 0
                 position = 0
