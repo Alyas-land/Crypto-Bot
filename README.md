@@ -1,1 +1,30 @@
-# Crypto-Bot
+# Crypto Bot
+
+## Overview
+**Crypto Bot** is a modular platform under active development for financial markets, including cryptocurrency and stock trading.  
+It is written in **Python** and designed to provide a flexible environment for implementing and testing various technical indicators and trading strategies.
+
+This project is part of a university course assignment and is currently in its early stages.
+
+## Features
+- Modular and extendable architecture
+- Integration of technical indicators (e.g., Moving Average, RSI, MACD)
+- Built with Python
+- Designed for cryptocurrency and stock market analysis
+- Easy to add new strategies and indicators
+
+## Getting Started
+> Note: This project is under active development and is not ready for production use.
+
+Clone the repository:
+```bash
+git clone https://github.com/your-username/crypto-bot.git
+```
+Install required dependencies:
+```
+pip install -r requirements.txt
+```
+Run the project:
+```
+python app.py
+```
