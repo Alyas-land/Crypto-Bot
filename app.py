@@ -35,9 +35,13 @@ df['signal'] = 0
 df.loc[(data_frame_rsi < 30) & (data_frame_rsi.shift(1) >= 30), 'signal'] = 1  # buy
 df.loc[(data_frame_rsi > 70) & (data_frame_rsi.shift(1) <= 70), 'signal'] = -1 # sell
 
+# Set stopless and take Profill
+dynamic_stoploss_percent = int(input(f'{green}Please Enter Stopless Percent:{reset}')) 
+take_profill_percent = int(input(f'{green}Please Enter TP Percent:{reset} '))
+
 # Backtesting
 print(f'{cyan} Start Backtest Method {reset}')
-backtest = back_test(df=df)
+backtest = back_test(df=df, dynamic_stoploss=dynamic_stoploss_percent, take_profit=take_profill_percent)
 print(f'{green} Backtest Completed Successfully. {reset}\n')
 
 
